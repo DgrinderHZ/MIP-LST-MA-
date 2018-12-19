@@ -42,6 +42,39 @@ void afficherTab(int t[],int n)
     printf("\n");
 }
 
+void imprime(int g[][MAX], int n){
+	int i, j;
+    for(i = 0; i < n; i++)
+     { 
+     	for ( j = 0; j < n; ++j)
+     	{
+        	printf("%d ", g[i][j]);
+     	}
+     	printf("\n");
+	 }
+}
+
+void configinit(int g[][MAX], int n){
+	int i, j;
+    for(i = 0; i <= n+1; i++)
+     { 
+     	for ( j = 0; j <= n+1; ++j)
+     	{
+        	if( i == 0 || j == 0 || i == n+1 || j == n+1) g[i][j] = 0;
+        	else g[i][j] = rand();
+     	}
+	 }
+}
+
+int nbVoisins(int g[][MAX], int n, int i, int j){
+	int nb = 0;
+	if(g[i-1][j]) nb++;
+	if(g[i+1][j]) nb++;
+	if(g[i][j-1]) nb++;
+	if(g[i][j+1]) nb++;
+return nb;
+}
+
 int main(){
 
 	int t[8];
