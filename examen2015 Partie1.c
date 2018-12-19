@@ -144,11 +144,26 @@ Indices lineIndice(int mat[][], int size, int line, char mot[]){
 return res;
 }
 
-void solve(int mat[][], int size){
-    int i, j;
+void printLine(int mat[][], int size, int line){
+    int i;
+    for(i = 0; i < size ; i++) printf("%c ", mat[line][i]);
+}
+
+void printLine(int mat[][], int size, int line, Indices ind){
+    int i;
     for(i = 0; i < size ; i++){
-        for(j = 0; j < size ; j++){
-            printf("%c ", mat[i][j]);
+        if(i < ind.deb || i > ind.fin) printf("%c ", mat[line][i]);
+        else printf("# ");
+    }
+}
+
+void solve(int mat[][], int size, char tab[][MAX], int nb){
+    int i, j, line, mot;
+    for(mot = 0; mot < nb ; mot++){
+        for(line = 0; line < size ; line++){
+            Indices ind = lineIndice(mat, sise, line, tab[mot]);
+            if(ind.deb == -1) printLine(mat, size, line);
+            else ptintLineWith#(mat, size, line , ind);
         }
         printf("\n");
     }
