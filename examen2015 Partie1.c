@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #define MAX 100
 
 int* range(int t[], int n){
@@ -43,6 +44,7 @@ void afficherTab(int t[],int n)
     printf("\n");
 }
 
+/***************** EXO2 ************/
 void imprime(int g[][MAX], int n){
 	int i, j;
     for(i = 0; i < n; i++)
@@ -53,21 +55,22 @@ void imprime(int g[][MAX], int n){
      	}
      	printf("\n");
 	 }
+	 printf("\nFIN\n");
 }
 
-void configinit(int g[][MAX], int n){
+void configInit(int g[][MAX], int n){
 	int i, j;
     for(i = 0; i <= n+1; i++)
      { 
      	for ( j = 0; j <= n+1; ++j)
      	{
         	if( i == 0 || j == 0 || i == n+1 || j == n+1) g[i][j] = 0;
-        	else g[i][j] = rand();
+        	else g[i][j] = rand()%2;
      	}
 	 }
 }
 
-int nbVoisins(int g[][MAX], int n, int i, int j){
+int nbVoisins(int g[][MAX], int i, int j){
 	int nb = 0;
 	if(g[i-1][j]) nb++;
 	if(g[i+1][j]) nb++;
@@ -77,97 +80,22 @@ return nb;
 }
 
 
-int estVivant(int g[][], int n, int i, int j){
-    int voisin = nbVoisin(g, n, i, j);
+int estVivant(int g[][MAX], int i, int j){
+    int voisin = nbVoisins(g, i, j);
     if(voisin == 0 || voisin == 4) return 0;
-    if(voisin == 2 || voisin == 3) return 0;
+    if(voisin == 2 || voisin == 3) return 1;
     return g[i][j];
 }
-void changeEtat(int g[][], int n){
+void changeEtat(int g[][MAX], int n){
     int i, j;
     for(i = 1; i <= n ; i++){
         for(j = 1; j <= n ; j++){
-            g[i][j] = estVivant(g, n, i, j);
+            g[i][j] = estVivant(g, i, j);
         }
     }
 }
 
-char** newStringArray(int nb){
-    char** tab = (char**)malloc(nb*sizeof(char*));
-    int i;
-    for(i = 0 ; i < nb ; i++)
-        tab[i] = (char*)malloc(MAX*sizeof(char));
-return tab;
-}
 
-char** newCharMatrix(int size){
-    char** mat = (char**)malloc(size*sizeof(char*));
-    int i;
-    for(i = 0 ; i < size ; i++)
-        mat[i] = (char*)malloc(size*sizeof(char));
-return mat;
-}
-
-void printMatrix(int mat[][], int size){
-    int i, j;
-    for(i = 0; i < size ; i++){
-        for(j = 0; j < size ; j++){
-            printf("%c ", mat[i][j]);
-        }
-        printf("\n");
-    }
-}
-
-typedef struct indice{
-    int deb;
-    int fin;
-}Indices;
-
-Indices lineIndice(int mat[][], int size, int line, char mot[]){
-    int i, j;
-    int trouver = 0, deb = -1, fin = -1;
-    Indices res;
-    for(i = 0; i < size ; i++){
-        if(mat[line][i] == mot[0]){
-            trouver = 1;
-            deb = i;
-            for(j = 1; j < size && mat[line][i+j] == mot[j] ; j++){
-                trouver++;
-                fin = i+j;
-            }
-        }
-        if(trouver){
-            res.deb = deb;
-            res.fin = fin;
-        }
-    }
-return res;
-}
-
-void printLine(int mat[][], int size, int line){
-    int i;
-    for(i = 0; i < size ; i++) printf("%c ", mat[line][i]);
-}
-
-void printLine(int mat[][], int size, int line, Indices ind){
-    int i;
-    for(i = 0; i < size ; i++){
-        if(i < ind.deb || i > ind.fin) printf("%c ", mat[line][i]);
-        else printf("# ");
-    }
-}
-
-void solve(int mat[][], int size, char tab[][MAX], int nb){
-    int i, j, line, mot;
-    for(mot = 0; mot < nb ; mot++){
-        for(line = 0; line < size ; line++){
-            Indices ind = lineIndice(mat, sise, line, tab[mot]);
-            if(ind.deb == -1) printLine(mat, size, line);
-            else ptintLineWith#(mat, size, line , ind);
-        }
-        printf("\n");
-    }
-}
 int main(){
 
 	int t[8];
@@ -177,5 +105,31 @@ int main(){
 	afficherTab(r, 8);
 	int *tabTrie = tri(t, r , 8);
 	afficherTab(tabTrie, 8);
+	/***************** EXO2 ************/
+	int cellule[MAX][MAX];
+	configInit(cellule, 4);
+	imprime(cellule, 6); // taile + 2 [2 pour les bordeurs]
+	changeEtat(cellule, 4);
+	imprime(cellule, 6);
 	return 0 ;
 }
+
+/*
+printf("Saisir nb: \n");
+	scanf("%d", &nb);
+	printf("Saisir size: \n");
+	scanf("%d", &size);
+for (i = 0; i < nb; ++i)
+	{
+		scanf("%s", tab[i]);
+	}
+
+	for ( i = 0; i < size; ++i)
+	{
+		for (j = 0; j < size; ++j)
+		{
+			printf("Saisir mat[%d][%d] :\n", i, j);
+			scanf("%c", &mat[i][j]);
+		}
+	}
+*/
