@@ -1,6 +1,8 @@
 # Watch this
 
 [Video link](https://www.youtube.com/watch?v=IS0hvoPt85w&list=PLF2W_rB6QiYD4fIRAU1HPYRiVl8SF7xLc&index=2)
+# Problem set
+[PDF link](https://github.com/DgrinderHZ/MIP/blob/master/Langage%20C/S3/Problem%20Set%201.pdf)
 
 
 #### Exo1
