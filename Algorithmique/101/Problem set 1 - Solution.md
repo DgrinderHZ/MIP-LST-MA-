@@ -33,9 +33,9 @@ DEBUT
      Ecrire("Donner deux nombre: ")
      Lire(a, b)
      
-     Si ( (num <= 0) ET (num <= 0) ) Alors
+     Si ( (a <= 0) ET (b <= 0) ) Alors
           Ecrire("Le produit est positif")
-     Sinon Si ( (num > 0) ET (num > 0) ) Alors
+     Sinon Si ( (a > 0) ET (b > 0) ) Alors
                Ecrire("Le produit est positif")
            Sinon
                Ecrire("Le produit est négatif")
