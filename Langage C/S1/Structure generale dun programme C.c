@@ -1,36 +1,38 @@
-// Declaration des bibliothèques
+// 0. Declaration des bibliothèques
 #include<stdio.h> // printf, scanf, ...
 #include<conio.h> // getch()
 //...etc
 
-// declaration des constantes 
+// 1. declaration des constantes 
 #define PI 3.14
-const float uneConstante = 10;
+const float uneConstante = 3.14;
 
-// declaration des variables globales
+// 2. declaration des variables globales
 int uneVG = 2;
 
-// declaration des fonctions
+// 3. declaration des fonctions
 int somme(int, int);
 
-// fonction principal
+// 4. fonction principal
 int main(){
 	printf("DEBUT\n");
-	// declaration des variables
+	
+	// 5. declaration des variables
 	int a, b, s;
 	
-	// traitement
+	// 6. traitement
 	printf("donner a: "); scanf("%d", &a);
-	printf("donner a: "); scanf("%d", &a);
+	printf("donner b: "); scanf("%d", &b);
 	s = somme(a, b); // s = a + b;
-	printf("La somme est: %d\n", somme);
+	printf("La somme est: %d\n", s);
+	
 	printf("FIN\n");
 	
 	getch();
 	return 0;
 }
 
-// definition des fonctions
+// 7. definition des fonctions
 int somme(int x, int y){
 	return (x + y);
 }
