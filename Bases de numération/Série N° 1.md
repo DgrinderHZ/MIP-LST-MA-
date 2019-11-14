@@ -8,7 +8,7 @@
    8 octet = 64 bits
    Alors (2^64)-1 = 1,844674407 x 10^19 - 1
 3. Avec n bit on peut représenter:
-    (2^n)-1 nombres
+    (2^n) nombres
 4. On a:
     1 Go = 1024 Mo = 1024 x 1024 x 1024 octets
     1 Mo = 1024 Ko = 1024 x 1024 octets
