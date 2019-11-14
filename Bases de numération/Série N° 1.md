@@ -96,5 +96,7 @@ Exemple:
   
 5. 6. A vous de les faires! c'est faciles :)
 ```
+## Convertir en ligne
 [Convertisseur en ligne](http://www.aly-abbara.com/utilitaires/convertisseur/convertisseur_chiffres.html)
+## Article
 [Article](https://www.positron-libre.com/cours/electronique/systeme-numeration/conversion-decimal-binaire-hexadecimal.php)
