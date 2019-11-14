@@ -1,4 +1,6 @@
 # Série N°1: Bases de numération
+## Video
+[Video](https://www.youtube.com/watch?v=Yf9HC8CbblI)
 ## Exercice 1:
 ```
 1. Le plus grand nombre que l'on peut stocker dans un octet est: 
