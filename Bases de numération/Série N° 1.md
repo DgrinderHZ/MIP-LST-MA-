@@ -1,10 +1,10 @@
 # Série N°1: Bases de numération
 ## Exercice 1:
 ```
-1. Le plus grand nombre grand nombre que l'on peut stocker dans un octet est: 
+1. Le plus grand nombre que l'on peut stocker dans un octet est: 
    1 octet = 8 bits
    Alors (2^8)-1 = 255
-2. Le plus grand nombre grand nombre que l'on peut stocker dans 64 bits est: 
+2. Le plus grand nombre que l'on peut stocker dans 64 bits est: 
    8 octet = 64 bits
    Alors (2^64)-1 = 1,844674407 x 10^19 - 1
 3. Avec n bit on peut représenter:
@@ -23,12 +23,12 @@
 ```
 1. Pricipe de conversion d'un nombre de la base 10 à une base 2:
       - Divisions successives par 2 avec notation du reste tant que le quotient est non nul;
-      - Prendre les restes du bas vers le haut et noter au fur et à mesure de droite à gauche;
+      - Prendre les restes du bas vers le haut et noter au fur et à mesure de gauche à droite;
 ```
 ![image](https://github.com/DgrinderHZ/MIP/blob/master/Bases%20de%20num%C3%A9ration/10%20to%202.jpg)
 ```
 2. Pricipe de conversion d'un nombre de la base 2 à une base 10:
-     - Multiplier le bit par 2 avec une puissance croissante de gauche à droite,
+     - Multiplier le bit par 2 avec une puissance croissante de droite à gauche,
      en commençe à la puissance zéro:
      1010(en base 2)
      10 (en base 10) = 1x2^3+ 0x2^2 + 1x2^1 + 0x2^0 
@@ -52,11 +52,11 @@
 7 | 111
 ```
 Exemple: 
-  10(10) = 1010(10)
+  10(10) = 1010(2)
   - Diviser en blocks de trois bits: 1 010
   - Compléter le premier block: 001 010
   - Remplacer:    1 2
-  Alors 10(10) = 1010(10) = 12(8)
+  Alors 10(10) = 1010(2) = 12(8)
   
   - Pour l'inverse il suffit d'inverser les étapes!
   
@@ -66,7 +66,7 @@ Exemple:
    4 bits avec completion à gauche par des zéros si nécessaire.
    - Remplacer chaque block par son chiffre correspondant:
 ```
-   Chiffre | En 3 bits
+   Chiffre | En 4 bits
    ------------ | -------------
 0 | 0000
 1 | 0001
@@ -86,13 +86,15 @@ E | 1110
 F | 1111
 ```
 Exemple: 
-  20(10) = 10100(10)
-  - Diviser en blocks de trois bits: 1 0100
+  20(10) = 10100(2)
+  - Diviser en blocks de 4 bits: 1 0100
   - Compléter le premier block: 0001 0100
   - Remplacer:    1 4
-  Alors 20(10) = 1010(10) = 14(16)
+  Alors 20(10) = 1010(2) = 14(16)
   
   - Pour l'inverse il suffit d'inverser les étapes!
   
 5. 6. A vous de les faires! c'est faciles :)
 ```
+[Convertisseur en ligne](http://www.aly-abbara.com/utilitaires/convertisseur/convertisseur_chiffres.html)
+[Article](https://www.positron-libre.com/cours/electronique/systeme-numeration/conversion-decimal-binaire-hexadecimal.php)
