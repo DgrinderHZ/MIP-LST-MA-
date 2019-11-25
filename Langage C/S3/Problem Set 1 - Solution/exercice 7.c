@@ -9,21 +9,18 @@ int main(){
 	scanf("%d", &a);
 	printf("Veuillez saisir le nombre b:\n");
 	scanf("%d", &b);
+	
 	printf("pgcd(%d, %d) = ", a, b);
 
-	if(a == b || b == 0) pgcd = a;
-	else if(a == 0 && b != 0) pgcd = b;
+	if(a == 0 && b != 0) pgcd = b;
+	else if(b == 0 && a != 0) pgcd = a;
 	else{
 
-		while(a != 0){
+		while(a != b){
 			if(a > b) a = a - b;
 			else if (b > a) b = b - a;
-			     else{
-			     	pgcd = a;
-			     	a = 0;
-			     }
 		}
-
+		pgcd = a;
 	}
 
 	printf("%d.\n", pgcd);
