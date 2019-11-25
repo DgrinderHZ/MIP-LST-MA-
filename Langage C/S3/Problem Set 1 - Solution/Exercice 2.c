@@ -3,7 +3,7 @@
 #include<stdlib.h>
 
 int main(){
-	int a, b, n;
+	int a, b;
 
 	printf("Veuillez saisir le nombre a puis b: ");
 	scanf("%d%d", &a, &b);
