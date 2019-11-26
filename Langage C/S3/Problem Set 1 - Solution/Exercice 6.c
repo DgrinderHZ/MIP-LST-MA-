@@ -5,7 +5,7 @@
 int main(){
 	int depart, fin;
 
-	printf("Veuillez saisir le nombre a puis b: ");
+	printf("Veuillez saisir le nombre de depart: ");
 	scanf("%d", &depart);
 
 	fin = depart + 10;
