@@ -5,7 +5,7 @@
 int main(){
 	int N, factoriel;
 
-	printf("Veuillez saisir le nombre a:\n");
+	printf("Veuillez saisir le nombre N:\n");
 	scanf("%d", &N);
 	
 	// Avec While
