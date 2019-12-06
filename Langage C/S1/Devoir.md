@@ -83,3 +83,10 @@ Exemple:
 **      *      **
 *****************
 ``` 
+## Exercice 5:
+Ecrire un programme qui demande de saisir un entier et calcule le nombre de ses chiffres.
+Exemple:
+- 1234:
+Le nombre 1234 a 4 chiffres
+- 12:
+Le nombre 12 a 2 chiffres
