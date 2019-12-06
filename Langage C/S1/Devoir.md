@@ -45,3 +45,41 @@ Exemple:
  890123454321098
 90123456765432109
 ``` 
+## Exercice 4:
+Ecrire un programme qui demande de saisir un entier impair entre ensuite
+affiche des étoiles comme sur les exemples suivants.
+Exemple:
+ - Si on saisie 11:
+```
+***********
+**   *   **
+* *  *  * *
+*  * * *  *
+*   ***   *
+***********
+*   ***   *
+*  * * *  *
+* *  *  * *
+**   *   **
+***********
+``` 
+- Si on saisie 17:
+``` 
+*****************
+**      *      **
+* *     *     * *
+*  *    *    *  *
+*   *   *   *   *
+*    *  *  *    *
+*     * * *     *
+*      ***      *
+*****************
+*      ***      *
+*     * * *     *
+*    *  *  *    *
+*   *   *   *   *
+*  *    *    *  *
+* *     *     * *
+**      *      **
+*****************
+``` 
