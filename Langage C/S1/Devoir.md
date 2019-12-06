@@ -90,3 +90,51 @@ Exemple:
 Le nombre 1234 a 4 chiffres
 - 12:
 Le nombre 12 a 2 chiffres
+
+## Exercice 6:
+Ecrire un programme qui teste si deux entiers sont amis ou non!
+En arithmétique, deux nombres (entiers strictement positifs) sont dits **amicaux** ou **amiables** ou **aimables** s'ils sont distincts et si chacun des deux nombres est égal à la somme des diviseurs stricts de l'autre.
+Exemple: 
+- 220 et 284
+- 1 184 et 1 210
+## Exercice 7:
+Ecrire un programme qui demande de saisir un nombre entier et ensuite affiche les nombres dans l'intervalle [-n, n] avec leurs inverse.
+Exemple:
+- Saisir 3:
+L'inverse de -3 est -0.333333
+L'inverse de -2 est -0.500000
+L'inverse de -1 est -1.000000
+L'inverse de zero n'existe pas.Car la division par zero est impossible
+L'inverse de 1 est 1.000000
+L'inverse de 2 est 0.500000
+L'inverse de 3 est 0.333333
+
+## Exercice 8:
+Ecrire un programme qui demande de saisir une note (il faut tester s'il est entre 0 et 20 sinon redemander la saisie) et affiche
+l'étudiant à validé, aura rattrapage, ou non validé.
+
+## Exercice 9:
+Ecrire un programme qui demande desaisir une suites de nombre entiers termininé par zéro, et affiche:
+- le max
+- le min
+- la somme 
+- la moyenne
+Exemple:
+```
+
+Donnez une serie de nombres entiers positifs,terminee par zero
+valeur N 1: 1
+valeur N 2: 3
+valeur N 3: 4
+valeur N 4: 6
+valeur N 5: 0
+La plus grande des valeurs est: 6
+La plus petite des valeurs est: 1
+La somme des valeurs est : 14
+La moyenne des valeurs est : 2.800000
+```
+
+## Exercice 10:
+
+
+
