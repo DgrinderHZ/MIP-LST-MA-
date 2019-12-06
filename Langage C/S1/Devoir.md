@@ -100,6 +100,7 @@ Exemple:
 ## Exercice 7:
 Ecrire un programme qui demande de saisir un nombre entier et ensuite affiche les nombres dans l'intervalle [-n, n] avec leurs inverse.
 Exemple:
+```
 - Saisir 3:
 L'inverse de -3 est -0.333333
 L'inverse de -2 est -0.500000
@@ -108,6 +109,7 @@ L'inverse de zero n'existe pas.Car la division par zero est impossible
 L'inverse de 1 est 1.000000
 L'inverse de 2 est 0.500000
 L'inverse de 3 est 0.333333
+```
 
 ## Exercice 8:
 Ecrire un programme qui demande de saisir une note (il faut tester s'il est entre 0 et 20 sinon redemander la saisie) et affiche
