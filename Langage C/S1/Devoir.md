@@ -137,6 +137,21 @@ La moyenne des valeurs est : 2.800000
 ```
 
 ## Exercice 10:
-
-
+Ecrire un programme qui demande de saisir un entier impair entre ensuite
+affiche la forme comme sur les exemples suivants.
+Exemple:
+ - Si on saisie 11:
+```
+***********
+*    |    *
+*    |    *
+*    |    *
+*    |    *
+*----O----*
+*    |    *
+*    |    *
+*    |    *
+*    |    *
+***********
+``` 
 
