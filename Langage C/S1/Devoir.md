@@ -1,5 +1,8 @@
 # Devoir MIP S1: Algorithmique et Langage C
-
+> [Correction en Videos](https://www.youtube.com/c/ZeekZoneHZ?sub_confirmation=1
+)
+> [FaceBook](https://www.facebook.com/pg/zeekzone)
+>By Zeek Zone
 ## Exercice 1:
 Ecrire un programme qui teste si deux entiers sont jumeaux ou non!
 En mathématiques, deux nombres premiers jumeaux sont deux nombres premiers qui ne diffèrent que de 2.
