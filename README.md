@@ -7,8 +7,11 @@ used during classes for MIP students at FST Errachidia, Morocco.
 
 #### 2019
 + [MIP S3 Folder](https://github.com/DgrinderHZ/MIP/tree/master/Langage%20C/S3)
-   - [Exams Corrected](https://github.com/DgrinderHZ/MIP/tree/master/Langage%20C/S3/Examens)
+   - [Exams Solution](https://github.com/DgrinderHZ/MIP/tree/master/Langage%20C/S3/Examens)
    - [Exams PDF](https://github.com/DgrinderHZ/MIP/blob/master/Langage%20C/S3/S%C3%A9rie%20TD%20et%20Exemens%20S3.pdf)
 + [MIP S1 Folder](https://github.com/DgrinderHZ/MIP/tree/master/Langage%20C/S1)
    - [Exams Corrected](https://github.com/DgrinderHZ/MIP/tree/master/Langage%20C/S3/Examens)
    - [Devoir](https://github.com/DgrinderHZ/MIP/blob/master/Langage%20C/S1/Devoir.md)
+   - [Devoir Solution](https://github.com/DgrinderHZ/MIP/tree/master/Langage%20C/S1/Devoir%20-%20Solution)
+   
+   
