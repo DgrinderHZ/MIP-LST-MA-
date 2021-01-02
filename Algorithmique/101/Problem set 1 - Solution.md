@@ -8,6 +8,8 @@
 #### [Exercice 2](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo2)
 #### [Exercice 3](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo3)
 #### [Exercice 4](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo4)
+#### [Exercice 5](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo5)
+#### [Exercice 6](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo6)
 
 #### Exo1
 ```
@@ -128,6 +130,23 @@ DEBUT
 	            FinSi
 	       FinSi
 	FinSi	
+FIN
+```
+#### Exo6
+```
+ALGORITHME  Quelle mention?
+     VARIABLE depart, fin, i: Entier
+DEBUT
+	Ecrire("Veuillez saisir le nombre de depart: ");
+	Lire(depart);
+
+	fin <-- depart + 10
+	depart <-- depart + 1
+
+	Pour i de depart a fin Faire
+		Ecrire(i, " ")
+	FinPour
+		
 FIN
 ```
 
