@@ -102,7 +102,7 @@ FIN
 
 #### Exo5
 ```
-ALGORITHME  Quelle heure dans une minute?
+ALGORITHME  Quelle mention?
      VARIABLE note: Entier
 DEBUT
 	Ecrire("Veuillez saisir VOTRE NOTE:\n");
