@@ -1,7 +1,7 @@
-# Watch this
-
+# Pour La Video
 [Video link](https://www.youtube.com/playlist?list=PLF2W_rB6QiYBZl59v_ueRM8kcUKQMPBGS)
-# Problem set
+
+# Exercice en PDF 
 [PDF link](https://github.com/DgrinderHZ/MIP/blob/master/Langage%20C/S3/Problem%20Set%201.pdf)
 
 #### [Exercice 1](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo1)
@@ -10,7 +10,6 @@
 #### [Exercice 4](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo4)
 
 #### Exo1
-
 ```
 ALGORITHME  Intervalle
      VARIABLE num, a, b : Entier
@@ -29,7 +28,6 @@ DEBUT
 FIN
 ```
 #### Exo2
-
 ```
 ALGORITHME  Signe de Produit
      VARIABLE a, b : Entier
@@ -50,7 +48,6 @@ FIN
 ```
 
 #### Exo3
-
 ```
 ALGORITHME  Montant
      VARIABLE heure, salaire: Entier
@@ -81,7 +78,6 @@ FIN
 
 
 #### Exo4
-
 ```
 ALGORITHME  Quelle heure dans une minute?
      VARIABLE h, m: Entier
@@ -103,3 +99,35 @@ DEBUT
 	Ecrire("Dans une minute, il sera ", h," heure(s) ", m, ".\n")
 FIN
 ```
+
+#### Exo5
+```
+ALGORITHME  Quelle heure dans une minute?
+     VARIABLE note: Entier
+DEBUT
+	Ecrire("Veuillez saisir VOTRE NOTE:\n");
+	Lire(note);
+	
+	Si (note < 7)
+		Ecrire("Non valide\n")
+	Sinon Si(note < 10)
+		  Ecrire("Rattrapage\n")
+	      Sinon Si(note < 12)
+		        Ecrire("Passable\n"
+		    Sinon Si(note < 14)
+		             Ecrire("Assez bien\n")
+	                  Sinon Si(note < 16)
+		                   Ecrire("Bien\n")
+	                        Sinon Si(note < 18)
+					  Ecrire("Tres bien\n")
+				      Sinon
+				      	  Ecrire("Excellent\n")
+			              FinSi
+				FinSi
+		          FinSi
+	            FinSi
+	       FinSi
+	FinSi	
+FIN
+```
+
