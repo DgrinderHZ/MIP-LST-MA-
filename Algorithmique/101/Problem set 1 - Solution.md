@@ -198,92 +198,111 @@ DEBUT
 	printf("La somme est ", somme, " et la moyenne est ", moyenne);
 FIN
 ```
-
-int N, somme;
-
-	printf("Veuillez saisir N:\n");
-	scanf("%d", &N);
-	
-	somme = 1;
-	int i;
-	for(i = 2; i < N; i++){
-		if(N % i == 0)
-			somme += i;
-	}
-
-	if(somme == N)
-		printf("%d est un nombre parfait.\n", N);
-	else
-		printf("%d n'est pas un nombre parfait.\n", N);
-		
-		
-
-int a, b, produit;
+#### Exo9
 ```
-	printf("Veuillez saisir a puis b:\n");
-	scanf("%d%d", &a, &b);
+ALGORITHME  Nomre Parfait
+     VARIABLE  N, somme, i: Entier
+DEBUT
+	Ecrire("Veuillez saisir N:\n");
+	Lire(N)
+	somme <-- 1
+	Pour i de 2 a N-1 Faire
+		Si (N % i = 0) Alors
+			somme <-- somme + i
+		FinSi
+	FinPour
 	
-	produit = 0;
-	int i;
-	if(a < b){
-		for (i = 0; i < a; ++i)
-		{
-			produit += b;
-		}
-	}else{
-		for (i = 0; i < b; ++i)
-		{
-			produit += a;
-		}
-	}
+	Si (somme = N)
+		Ecrire(N, " est un nombre parfait.\n");
+	Sinon
+		Ecrire(N, " n'est pas un nombre parfait.\n");
+	FinSi
+FIN
+```
 
-	printf("%dx%d = %d\n", a, b, produit);
-```	
+#### Exo10	
+```
+ALGORITHME  Prduit avec sommation
+     VARIABLE  a, b, produit, i: Entier
+DEBUT
+	Ecrire("Veuillez saisir a puis b:\n");
+	Lire(a, b)
 	
+	produit  <--  0;
+	Si (a < b) Alors
+		Pour i de 1 a a Faire
+			produit <-- produit + b
+		FinPour
+	Sinon
+		Pour i de 1 a b Faire
+			produit <-- produit + a
+		FinPour
+	FinSi
+
+	Ecrire(a, "x", b, " = ", produit)
+FIN
+```
+
+#### Exo11
+```
+ALGORITHME  Nomre Premier
+     VARIABLE  N, i: Entier
+     	       premier = vrai: Booleen
+DEBUT
+	Ecrire("Veuillez saisir N:\n");
+	Lire(N)
 	
-int N, premier = 1;
-
-	printf("Veuillez saisir le nombre N:\n");
-	scanf("%d", &N);
+	Pour i de 2 a N-1 Faire
+		Si (N % i == 0) Alors
+		    premier = 0;
+		    arreter la boucle
+		FinSi
+	FinPour
 	
-	int i; 
-	for(i = 2; i < N; i++)
-		if(N % i == 0){
-			premier = 0;
-			break;
-		}
+	Si (premier) Alors
+		Ecrire(N, "est un nombre premier.\n")
+	Sinon
+		Ecrire(N, "n\'est un nombre premier.\n")
+	FinSi
+	
+FIN
+```
 
-	if(premier)
-		printf("%d est un nombre premier.\n", N);
-	else
-		printf("%d n\'est un nombre premier.\n", N);
-
-
-
-float note, moyenne, somme;
-	int n;
+#### Exo12
+```
+ALGORITHME  Nomre Premier
+     VARIABLE  n, i: Entier
+     	       note, moyenne, somme: Reel
+DEBUT
+	Ecrire("Veuillez saisir N:\n");
+	Lire(N)
 	
 	n = 0;
 	somme = 0;
-	while(1){
-		printf("Note %d: ", n+1);
-		scanf("%f", &note);
-		if(note >= 0){
-			somme += note; 
-			n++;
-		}else 
-			break;
-	}
+	Tant Que(vrai) Faire
+		Ecrire("Note ", n+1);
+		Lire(note);
+		Si (note >= 0) Alors
+			somme += note
+			n++
+		Sinon 
+			arreter la boucle
+		FinSi
+	FinTantQue
 	
 	moyenne = somme/n;
 	printf("La moyenne de ces %d notes est: %f.\n", n, moyenne);
 	
-	
-	
-int N, factoriel;
+FIN
+```
 
-	printf("Veuillez saisir le nombre N:\n");
-	scanf("%d", &N);
+#### Exo13
+```
+ALGORITHME  Nomre Premier
+     VARIABLE  N, factoriel: Entier
+DEBUT
+	Ecrire("Veuillez saisir N:\n");
+	Lire(N)
 	
 	// Avec While
 	factoriel = 1;
@@ -302,4 +321,9 @@ int N, factoriel;
 	}
 	
 	printf("%d! = %d\n", N, factoriel);
+	
+FIN
+```
+	
+	
 	
