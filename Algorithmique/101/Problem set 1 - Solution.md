@@ -7,7 +7,7 @@
 #### [Exercice 1](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo1)
 #### [Exercice 2](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo2)
 #### [Exercice 3](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo3)
-
+#### [Exercice 4](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo4)
 
 #### Exo1
 
@@ -56,25 +56,50 @@ ALGORITHME  Montant
      VARIABLE heure, salaire: Entier
 	         montant = 0:  Reel
 DEBUT
-     Ecrire("Veuillez saisir le nombre des heures de travail: ")
+        Ecrire("Veuillez saisir le nombre des heures de travail: ")
 	Lire(heure)
 
 	Ecrire("Veuillez saisir votre salaire: ")
 	Lire(salaire)
 
 	Si (heure <= 39) Alors
-           montant += 0;
+           montant <-- montant + 0;
 	Sinon Si (heure <= 44) Alors
-                  montant += (heure-40+1)*0.5*salaire;
+                  montant <-- montant + (heure-40+1)*0.5*salaire;
 	      Sinon Si (heure <= 49) Alors
-                        montant += 5*0.5*salaire + (heure-45+1)*0.75*salaire;
+                        montant <-- montant + 5*0.5*salaire + (heure-45+1)*0.75*salaire;
 	            Sinon Si (heure <= 50) Alors
-                             montant += 5*0.5*salaire + 5*0.75*salaire + (heure-50+1)*salaire;
+                             montant <-- montant + 5*0.5*salaire + 5*0.75*salaire + (heure-50+1)*salaire;
                           FinSi
                     FinSi
               FinSi
      	FinSi
 	
 	Ecrire("Le montant est: ", montant, ".\n"); 
+FIN
+```
+
+
+#### Exo4
+
+```
+ALGORITHME  Quelle heure dans une minute?
+     VARIABLE h, m: Entier
+DEBUT
+	Ecrire("Veuillez saisir l\'heure:\n")
+	Lire(h)
+	Ecrire("Veuillez saisir la minute:\n")
+	Lire(m)
+
+	m <-- m + 1
+	Si (m >= 60) Alors
+		m <-- m - 60
+		h <-- h + 1
+		Si (h >= 24) Alors
+			h <-- h - 24
+		FinSi
+	FinSi
+
+	Ecrire("Dans une minute, il sera ", h," heure(s) ", m, ".\n")
 FIN
 ```
