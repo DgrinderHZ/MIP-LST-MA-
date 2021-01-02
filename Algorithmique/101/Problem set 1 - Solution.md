@@ -66,10 +66,10 @@ DEBUT
                         montant += 5*0.5*salaire + (heure-45+1)*0.75*salaire;
 	            Sinon Si (heure <= 50) Alors
                              montant += 5*0.5*salaire + 5*0.75*salaire + (heure-50+1)*salaire;
-                       FinSi
-                 FinSi
-           FinSi
-     FinSi
+                          FinSi
+                    FinSi
+              FinSi
+     	FinSi
 	
 	Ecrire("Le montant est: ", montant, ".\n"); 
 FIN
