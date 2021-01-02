@@ -219,7 +219,7 @@ int N, somme;
 		
 
 int a, b, produit;
-
+```
 	printf("Veuillez saisir a puis b:\n");
 	scanf("%d%d", &a, &b);
 	
@@ -238,7 +238,7 @@ int a, b, produit;
 	}
 
 	printf("%dx%d = %d\n", a, b, produit);
-	
+```	
 	
 	
 int N, premier = 1;
