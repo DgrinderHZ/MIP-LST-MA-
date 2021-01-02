@@ -1,6 +1,6 @@
 # Watch this
 
-[Video link](https://www.youtube.com/watch?v=IS0hvoPt85w&list=PLF2W_rB6QiYD4fIRAU1HPYRiVl8SF7xLc&index=2)
+[Video link](https://www.youtube.com/playlist?list=PLF2W_rB6QiYBZl59v_ueRM8kcUKQMPBGS)
 # Problem set
 [PDF link](https://github.com/DgrinderHZ/MIP/blob/master/Langage%20C/S3/Problem%20Set%201.pdf)
 
@@ -9,7 +9,7 @@
 
 ```
 ALGORITHME  Intervalle
-     num, a, b : Entier
+     VARIABLE num, a, b : Entier
 DEBUT
      Ecrire("Donner votre intervalle: [a,b] tq, a < b ")
      Lire(a, b)
@@ -28,7 +28,7 @@ FIN
 
 ```
 ALGORITHME  Signe de Produit
-     a, b : Entier
+     VARIABLE a, b : Entier
 DEBUT
      Ecrire("Donner deux nombre: ")
      Lire(a, b)
@@ -42,5 +42,35 @@ DEBUT
            FinSi
      FinSi
      
+FIN
+```
+
+#### Exo3
+
+```
+ALGORITHME  Montant
+     VARIABLE heure, salaire: Entier
+	         montant = 0:  Reel
+DEBUT
+     Ecrire("Veuillez saisir le nombre des heures de travail: ")
+	Lire(heure)
+
+	Ecrire("Veuillez saisir votre salaire: ")
+	Lire(salaire)
+
+	Si (heure <= 39) Alors
+           montant += 0;
+	Sinon Si (heure <= 44) Alors
+                  montant += (heure-40+1)*0.5*salaire;
+	      Sinon Si (heure <= 49) Alors
+                        montant += 5*0.5*salaire + (heure-45+1)*0.75*salaire;
+	            Sinon Si (heure <= 50) Alors
+                             montant += 5*0.5*salaire + 5*0.75*salaire + (heure-50+1)*salaire;
+                       FinSi
+                 FinSi
+           FinSi
+     FinSi
+	
+	Ecrire("Le montant est: ", montant, ".\n"); 
 FIN
 ```
