@@ -10,6 +10,8 @@
 #### [Exercice 4](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo4)
 #### [Exercice 5](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo5)
 #### [Exercice 6](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo6)
+#### [Exercice 7](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo7)
+
 
 #### Exo1
 ```
@@ -149,4 +151,155 @@ DEBUT
 		
 FIN
 ```
+#### Exo7
+```
+ALGORITHME  PGCD
+     VARIABLE a, b, pgcd: Entier
+DEBUT
+	Ecrire("Veuillez saisir le nombre a:\n")
+	Lire(a)
+	Ecrire("Veuillez saisir le nombre b:\n")
+	Lire(b)
 
+	Si (a == 0 && b <> 0) Alors
+		pgcd <-- b;
+	Sinon Si (b == 0 && a <> 0) Alors
+		  pgcd <-- a
+	      Sinon
+		  Tant Que(a <> b) Faire
+			Si(a > b) Alors
+			    a <-- a - b
+			Sinon Si (b > a) 
+			    b <-- b - a
+			FinSi
+		  FinTantQue
+		  pgcd <-- a
+	      FinSi
+	FinSi
+	Ecrire("pgcd(", a, ",", b, ") = ", pgcd)	
+FIN
+```
+#### Exo8
+```
+ALGORITHME  Somme et Moyenne
+     VARIABLE  N, a, somme, i: Entier
+	         moyenne = 0:  Reel
+DEBUT
+	Ecrire("Veuillez saisir N:\n");
+	Lire(N);
+	
+	somme <-- 0;
+	Pour i de 1 a N Faire
+		Ecrire("Saisir le nombre :", i+1)
+		Lire(a)
+		somme <-- somme + a;
+	FinPour
+	moyenne <-- somme/N;
+	printf("La somme est ", somme, " et la moyenne est ", moyenne);
+FIN
+```
+
+int N, somme;
+
+	printf("Veuillez saisir N:\n");
+	scanf("%d", &N);
+	
+	somme = 1;
+	int i;
+	for(i = 2; i < N; i++){
+		if(N % i == 0)
+			somme += i;
+	}
+
+	if(somme == N)
+		printf("%d est un nombre parfait.\n", N);
+	else
+		printf("%d n'est pas un nombre parfait.\n", N);
+		
+		
+
+int a, b, produit;
+
+	printf("Veuillez saisir a puis b:\n");
+	scanf("%d%d", &a, &b);
+	
+	produit = 0;
+	int i;
+	if(a < b){
+		for (i = 0; i < a; ++i)
+		{
+			produit += b;
+		}
+	}else{
+		for (i = 0; i < b; ++i)
+		{
+			produit += a;
+		}
+	}
+
+	printf("%dx%d = %d\n", a, b, produit);
+	
+	
+	
+int N, premier = 1;
+
+	printf("Veuillez saisir le nombre N:\n");
+	scanf("%d", &N);
+	
+	int i; 
+	for(i = 2; i < N; i++)
+		if(N % i == 0){
+			premier = 0;
+			break;
+		}
+
+	if(premier)
+		printf("%d est un nombre premier.\n", N);
+	else
+		printf("%d n\'est un nombre premier.\n", N);
+
+
+
+float note, moyenne, somme;
+	int n;
+	
+	n = 0;
+	somme = 0;
+	while(1){
+		printf("Note %d: ", n+1);
+		scanf("%f", &note);
+		if(note >= 0){
+			somme += note; 
+			n++;
+		}else 
+			break;
+	}
+	
+	moyenne = somme/n;
+	printf("La moyenne de ces %d notes est: %f.\n", n, moyenne);
+	
+	
+	
+int N, factoriel;
+
+	printf("Veuillez saisir le nombre N:\n");
+	scanf("%d", &N);
+	
+	// Avec While
+	factoriel = 1;
+	int i = 1; 
+	while(i <= N){
+		factoriel *= i;
+		i++;
+	}
+
+	printf("%d! = %d\n", N, factoriel);
+
+	// Avec for
+	factoriel = 1;
+	for(i = 1; i <= N; i++){
+		factoriel *= i;
+	}
+	
+	printf("%d! = %d\n", N, factoriel);
+	
