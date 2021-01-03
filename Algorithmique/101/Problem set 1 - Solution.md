@@ -12,7 +12,7 @@
 
 #### Exo1
 ```python
-ALGORITHME  Intervalle
+ALGORITHME  intervalle
      VARIABLE num, a, b : Entier
 DEBUT
      Ecrire("Donner votre intervalle: [a,b] tq, a < b ")
@@ -30,7 +30,7 @@ FIN
 ```
 #### Exo2
 ```python
-ALGORITHME  Signe de Produit
+ALGORITHME  signe de produit
      VARIABLE a, b : Entier
 DEBUT
      Ecrire("Donner deux nombre: ")
@@ -50,7 +50,7 @@ FIN
 
 #### Exo3
 ```python
-ALGORITHME  Montant
+ALGORITHME  montant
      VARIABLE heure, salaire: Entier
 	         montant = 0:  Reel
 DEBUT
@@ -80,7 +80,7 @@ FIN
 
 #### Exo4
 ```python
-ALGORITHME  Quelle heure dans une minute?
+ALGORITHME  quelle heure dans une minute?
      VARIABLE h, m: Entier
 DEBUT
 	Ecrire("Veuillez saisir l\'heure:")
@@ -103,7 +103,7 @@ FIN
 
 #### Exo5
 ```python
-ALGORITHME  Quelle mention?
+ALGORITHME  quelle mention?
      VARIABLE note: Entier
 DEBUT
 	Ecrire("Veuillez saisir VOTRE NOTE:");
@@ -133,7 +133,7 @@ FIN
 ```
 #### Exo6
 ```python
-ALGORITHME  Quelle mention?
+ALGORITHME  dix nomvre suivants!
      VARIABLE depart, fin, i: Entier
 DEBUT
 	Ecrire("Veuillez saisir le nombre de depart: ");
@@ -150,7 +150,7 @@ FIN
 ```
 #### Exo7
 ```python
-ALGORITHME  PGCD
+ALGORITHME  pgcd
      VARIABLE a, b, pgcd: Entier
 DEBUT
 	Ecrire("Veuillez saisir le nombre a:")
@@ -178,48 +178,48 @@ FIN
 ```
 #### Exo8
 ```python
-ALGORITHME  Somme et Moyenne
-     VARIABLE  N, a, somme, i: Entier
+ALGORITHME  somme et moyenne
+     VARIABLE  n, a, somme, i: Entier
 	         moyenne = 0:  Reel
 DEBUT
-	Ecrire("Veuillez saisir N:");
-	Lire(N);
+	Ecrire("Veuillez saisir n:");
+	Lire(n);
 	
 	somme <-- 0;
-	Pour i de 1 a N Faire
+	Pour i de 1 a n Faire
 		Ecrire("Saisir le nombre :", i+1)
 		Lire(a)
 		somme <-- somme + a;
 	FinPour
-	moyenne <-- somme/N;
+	moyenne <-- somme/n;
 	printf("La somme est ", somme, " et la moyenne est ", moyenne);
 FIN
 ```
 #### Exo9
 ```python
-ALGORITHME  Nomre Parfait
-     VARIABLE  N, somme, i: Entier
+ALGORITHME  nomre parfait
+     VARIABLE  n, somme, i: Entier
 DEBUT
-	Ecrire("Veuillez saisir N:");
-	Lire(N)
+	Ecrire("Veuillez saisir n:");
+	Lire(n)
 	somme <-- 1
-	Pour i de 2 a N-1 Faire
-		Si (N % i = 0) Alors
+	Pour i de 2 a n-1 Faire
+		Si (n % i = 0) Alors
 			somme <-- somme + i
 		FinSi
 	FinPour
 	
-	Si (somme = N)
-		Ecrire(N, " est un nombre parfait.");
+	Si (somme = n)
+		Ecrire(n, " est un nombre parfait.");
 	Sinon
-		Ecrire(N, " n'est pas un nombre parfait.");
+		Ecrire(n, " n'est pas un nombre parfait.");
 	FinSi
 FIN
 ```
 
 #### Exo10	
 ```python
-ALGORITHME  Produit avec sommation
+ALGORITHME  produit avec sommation
      VARIABLE  a, b, produit, i: Entier
 DEBUT
 	Ecrire("Veuillez saisir a puis b:");
@@ -242,24 +242,24 @@ FIN
 
 #### Exo11
 ```python
-ALGORITHME  Nomre Premier
-     VARIABLE  N, i: Entier
+ALGORITHME  nomre premier
+     VARIABLE  n, i: Entier
      	       premier = vrai: Booleen
 DEBUT
-	Ecrire("Veuillez saisir N:")
-	Lire(N)
+	Ecrire("Veuillez saisir n:")
+	Lire(n)
 	
-	Pour i de 2 a N-1 Faire
-		Si (N % i = 0) Alors
+	Pour i de 2 a n-1 Faire
+		Si (n % i = 0) Alors
 		    premier <-- 0
 		    arreter la boucle
 		FinSi
 	FinPour
 	
 	Si (premier) Alors
-		Ecrire(N, "est un nombre premier.")
+		Ecrire(n, "est un nombre premier.")
 	Sinon
-		Ecrire(N, "n\'est un nombre premier.")
+		Ecrire(n, "n\'est un nombre premier.")
 	FinSi
 	
 FIN
@@ -267,12 +267,12 @@ FIN
 
 #### Exo12
 ```python
-ALGORITHME  La moysns des notes
+ALGORITHME  la moysns des notes
      VARIABLE  n, i: Entier
      	       note, moyenne, somme: Reel
 DEBUT
-	Ecrire("Veuillez saisir N:");
-	Lire(N)
+	Ecrire("Veuillez saisir n:");
+	Lire(n)
 	
 	n <-- 0;
 	somme <-- 0;
@@ -295,39 +295,39 @@ FIN
 
 #### Exo13
 ```python
-ALGORITHME  Factoriel
-     VARIABLE  N, factoriel, i: Entier
+ALGORITHME  factoriel
+     VARIABLE  n, factoriel, i: Entier
 DEBUT
-	Ecrire("Veuillez saisir N:");
-	Lire(N)
+	Ecrire("Veuillez saisir n:");
+	Lire(n)
 	
 	// Avec While
 	factoriel <-- 1;
 	i <-- 1; 
-	Tant Que (i <= N) faire
+	Tant Que (i <= n) faire
 		factoriel <-- factoriel * i
 		n <-- n + 1
 	FinTantQue
 
-	printf(N, "! = ", factoriel);
+	printf(n, "! = ", factoriel);
 	
 FIN
 ```
 
 ```python
-ALGORITHME  Factoriel
-     VARIABLE  N, factoriel, i: Entier
+ALGORITHME  factoriel
+     VARIABLE  n, factoriel, i: Entier
 DEBUT
-	Ecrire("Veuillez saisir N:");
-	Lire(N)
+	Ecrire("Veuillez saisir n:");
+	Lire(n)
 	
 	// Avec for
 	factoriel <-- 1;
-	Pour i de 1 a N Faire
+	Pour i de 1 a n Faire
 		factoriel <-- factoriel * i
 	FinPour
 	
-	printf(N, "! = ", factoriel);
+	printf(n, "! = ", factoriel);
 	
 FIN
 ```
