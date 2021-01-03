@@ -11,7 +11,7 @@
 
 
 #### Exo1
-```
+```python
 ALGORITHME  Intervalle
      VARIABLE num, a, b : Entier
 DEBUT
@@ -29,7 +29,7 @@ DEBUT
 FIN
 ```
 #### Exo2
-```
+```python
 ALGORITHME  Signe de Produit
      VARIABLE a, b : Entier
 DEBUT
@@ -49,7 +49,7 @@ FIN
 ```
 
 #### Exo3
-```
+```python
 ALGORITHME  Montant
      VARIABLE heure, salaire: Entier
 	         montant = 0:  Reel
@@ -79,7 +79,7 @@ FIN
 
 
 #### Exo4
-```
+```python
 ALGORITHME  Quelle heure dans une minute?
      VARIABLE h, m: Entier
 DEBUT
@@ -102,7 +102,7 @@ FIN
 ```
 
 #### Exo5
-```
+```python
 ALGORITHME  Quelle mention?
      VARIABLE note: Entier
 DEBUT
@@ -132,7 +132,7 @@ DEBUT
 FIN
 ```
 #### Exo6
-```
+```python
 ALGORITHME  Quelle mention?
      VARIABLE depart, fin, i: Entier
 DEBUT
@@ -149,7 +149,7 @@ DEBUT
 FIN
 ```
 #### Exo7
-```
+```python
 ALGORITHME  PGCD
      VARIABLE a, b, pgcd: Entier
 DEBUT
@@ -177,7 +177,7 @@ DEBUT
 FIN
 ```
 #### Exo8
-```
+```python
 ALGORITHME  Somme et Moyenne
      VARIABLE  N, a, somme, i: Entier
 	         moyenne = 0:  Reel
@@ -196,7 +196,7 @@ DEBUT
 FIN
 ```
 #### Exo9
-```
+```python
 ALGORITHME  Nomre Parfait
      VARIABLE  N, somme, i: Entier
 DEBUT
@@ -218,8 +218,8 @@ FIN
 ```
 
 #### Exo10	
-```
-ALGORITHME  **Produit avec sommation**
+```python
+ALGORITHME  Produit avec sommation
      VARIABLE  a, b, produit, i: Entier
 DEBUT
 	Ecrire("Veuillez saisir a puis b:");
@@ -241,7 +241,7 @@ FIN
 ```
 
 #### Exo11
-```
+```python
 ALGORITHME  Nomre Premier
      VARIABLE  N, i: Entier
      	       premier = vrai: Booleen
@@ -266,7 +266,7 @@ FIN
 ```
 
 #### Exo12
-```
+```python
 ALGORITHME  La moysns des notes
      VARIABLE  n, i: Entier
      	       note, moyenne, somme: Reel
@@ -294,7 +294,7 @@ FIN
 ```
 
 #### Exo13
-```
+```python
 ALGORITHME  Factoriel
      VARIABLE  N, factoriel, i: Entier
 DEBUT
@@ -314,7 +314,7 @@ DEBUT
 FIN
 ```
 
-```
+```python
 ALGORITHME  Factoriel
      VARIABLE  N, factoriel, i: Entier
 DEBUT
