@@ -4,17 +4,17 @@
 #include<stdlib.h>
 
 int main(){
-	int a, b, n;
+	int a, b, num;
 
 	printf("Veuillez saisir le nombre a puis b: [a, b]\n");
 	scanf("%d%d", &a, &b);
 	printf("Veuillez saisir le nombre n:\n");
-	scanf("%d", &n);
+	scanf("%d", &num);
 	
-	if(n <= b && n >= a)
-		printf("%d appartient a [%d, %d].\n", n, a, b);
+	if(num <= b && num >= a)
+		printf("%d appartient a [%d, %d].\n", num, a, b);
 	else
-		printf("%d n'appartient pas a [%d, %d].\n", n, a, b);
+		printf("%d n'appartient pas a [%d, %d].\n", num, a, b);
 	
 	
 	getch();
