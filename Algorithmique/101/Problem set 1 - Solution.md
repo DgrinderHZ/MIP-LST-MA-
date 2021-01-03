@@ -288,7 +288,7 @@ DEBUT
 	FinTantQue
 	
 	moyenne <-- somme/n;
-	printf("La moyenne de ces ", n," notes est: ", moyenne);
+	ecrire("La moyenne de ces ", n," notes est: ", moyenne);
 	
 FIN
 ```
@@ -309,7 +309,7 @@ DEBUT
 		n <-- n + 1
 	FinTantQue
 
-	printf(n, "! = ", factoriel);
+	ecrire(n, "! = ", factoriel);
 	
 FIN
 ```
@@ -327,7 +327,7 @@ DEBUT
 		factoriel <-- factoriel * i
 	FinPour
 	
-	printf(n, "! = ", factoriel);
+	ecrire(n, "! = ", factoriel);
 	
 FIN
 ```
