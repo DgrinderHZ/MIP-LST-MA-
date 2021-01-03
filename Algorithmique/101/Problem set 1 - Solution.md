@@ -73,7 +73,7 @@ DEBUT
               FinSi
      	FinSi
 	
-	Ecrire("Le montant est: ", montant, ".\n"); 
+	Ecrire("Le montant est: ", montant); 
 FIN
 ```
 
@@ -83,9 +83,9 @@ FIN
 ALGORITHME  Quelle heure dans une minute?
      VARIABLE h, m: Entier
 DEBUT
-	Ecrire("Veuillez saisir l\'heure:\n")
+	Ecrire("Veuillez saisir l\'heure:")
 	Lire(h)
-	Ecrire("Veuillez saisir la minute:\n")
+	Ecrire("Veuillez saisir la minute:")
 	Lire(m)
 
 	m <-- m + 1
@@ -97,7 +97,7 @@ DEBUT
 		FinSi
 	FinSi
 
-	Ecrire("Dans une minute, il sera ", h," heure(s) ", m, ".\n")
+	Ecrire("Dans une minute, il sera ", h," heure(s) ", m)
 FIN
 ```
 
@@ -106,23 +106,23 @@ FIN
 ALGORITHME  Quelle mention?
      VARIABLE note: Entier
 DEBUT
-	Ecrire("Veuillez saisir VOTRE NOTE:\n");
+	Ecrire("Veuillez saisir VOTRE NOTE:");
 	Lire(note);
 	
 	Si (note < 7)
-		Ecrire("Non valide\n")
+		Ecrire("Non valide")
 	Sinon Si(note < 10)
-		  Ecrire("Rattrapage\n")
+		  Ecrire("Rattrapage")
 	      Sinon Si(note < 12)
-		        Ecrire("Passable\n"
+		        Ecrire("Passable")
 		    Sinon Si(note < 14)
-		             Ecrire("Assez bien\n")
+		             Ecrire("Assez bien")
 	                  Sinon Si(note < 16)
-		                   Ecrire("Bien\n")
+		                   Ecrire("Bien")
 	                        Sinon Si(note < 18)
-					  Ecrire("Tres bien\n")
+					  Ecrire("Tres bien")
 				      Sinon
-				      	  Ecrire("Excellent\n")
+				      	  Ecrire("Excellent")
 			              FinSi
 				FinSi
 		          FinSi
@@ -153,9 +153,9 @@ FIN
 ALGORITHME  PGCD
      VARIABLE a, b, pgcd: Entier
 DEBUT
-	Ecrire("Veuillez saisir le nombre a:\n")
+	Ecrire("Veuillez saisir le nombre a:")
 	Lire(a)
-	Ecrire("Veuillez saisir le nombre b:\n")
+	Ecrire("Veuillez saisir le nombre b:")
 	Lire(b)
 
 	Si (a == 0 && b <> 0) Alors
@@ -182,7 +182,7 @@ ALGORITHME  Somme et Moyenne
      VARIABLE  N, a, somme, i: Entier
 	         moyenne = 0:  Reel
 DEBUT
-	Ecrire("Veuillez saisir N:\n");
+	Ecrire("Veuillez saisir N:");
 	Lire(N);
 	
 	somme <-- 0;
@@ -200,7 +200,7 @@ FIN
 ALGORITHME  Nomre Parfait
      VARIABLE  N, somme, i: Entier
 DEBUT
-	Ecrire("Veuillez saisir N:\n");
+	Ecrire("Veuillez saisir N:");
 	Lire(N)
 	somme <-- 1
 	Pour i de 2 a N-1 Faire
@@ -210,28 +210,28 @@ DEBUT
 	FinPour
 	
 	Si (somme = N)
-		Ecrire(N, " est un nombre parfait.\n");
+		Ecrire(N, " est un nombre parfait.");
 	Sinon
-		Ecrire(N, " n'est pas un nombre parfait.\n");
+		Ecrire(N, " n'est pas un nombre parfait.");
 	FinSi
 FIN
 ```
 
 #### Exo10	
 ```
-ALGORITHME  Prduit avec sommation
+ALGORITHME  **Produit avec sommation**
      VARIABLE  a, b, produit, i: Entier
 DEBUT
-	Ecrire("Veuillez saisir a puis b:\n");
+	Ecrire("Veuillez saisir a puis b:");
 	Lire(a, b)
 	
 	produit  <--  0;
 	Si (a < b) Alors
-		Pour i de 1 a a Faire
+		Pour i de 1 à a Faire
 			produit <-- produit + b
 		FinPour
 	Sinon
-		Pour i de 1 a b Faire
+		Pour i de 1 à b Faire
 			produit <-- produit + a
 		FinPour
 	FinSi
@@ -246,20 +246,20 @@ ALGORITHME  Nomre Premier
      VARIABLE  N, i: Entier
      	       premier = vrai: Booleen
 DEBUT
-	Ecrire("Veuillez saisir N:\n");
+	Ecrire("Veuillez saisir N:")
 	Lire(N)
 	
 	Pour i de 2 a N-1 Faire
-		Si (N % i == 0) Alors
-		    premier = 0;
+		Si (N % i = 0) Alors
+		    premier <-- 0
 		    arreter la boucle
 		FinSi
 	FinPour
 	
 	Si (premier) Alors
-		Ecrire(N, "est un nombre premier.\n")
+		Ecrire(N, "est un nombre premier.")
 	Sinon
-		Ecrire(N, "n\'est un nombre premier.\n")
+		Ecrire(N, "n\'est un nombre premier.")
 	FinSi
 	
 FIN
@@ -267,57 +267,67 @@ FIN
 
 #### Exo12
 ```
-ALGORITHME  Nomre Premier
+ALGORITHME  La moysns des notes
      VARIABLE  n, i: Entier
      	       note, moyenne, somme: Reel
 DEBUT
-	Ecrire("Veuillez saisir N:\n");
+	Ecrire("Veuillez saisir N:");
 	Lire(N)
 	
-	n = 0;
-	somme = 0;
-	Tant Que(vrai) Faire
-		Ecrire("Note ", n+1);
+	n <-- 0;
+	somme <-- 0;
+	Tant Que (vrai) Faire
+		Ecrire("Saisir la note numero ", n+1);
 		Lire(note);
 		Si (note >= 0) Alors
-			somme += note
-			n++
+			somme <-- somme + note
+			n <-- n + 1
 		Sinon 
 			arreter la boucle
 		FinSi
 	FinTantQue
 	
-	moyenne = somme/n;
-	printf("La moyenne de ces %d notes est: %f.\n", n, moyenne);
+	moyenne <-- somme/n;
+	printf("La moyenne de ces ", n," notes est: ", moyenne);
 	
 FIN
 ```
 
 #### Exo13
 ```
-ALGORITHME  Nomre Premier
-     VARIABLE  N, factoriel: Entier
+ALGORITHME  Factoriel
+     VARIABLE  N, factoriel, i: Entier
 DEBUT
-	Ecrire("Veuillez saisir N:\n");
+	Ecrire("Veuillez saisir N:");
 	Lire(N)
 	
 	// Avec While
-	factoriel = 1;
-	int i = 1; 
-	while(i <= N){
-		factoriel *= i;
-		i++;
-	}
+	factoriel <-- 1;
+	i <-- 1; 
+	Tant Que (i <= N) faire
+		factoriel <-- factoriel * i
+		n <-- n + 1
+	FinTantQue
 
-	printf("%d! = %d\n", N, factoriel);
-
-	// Avec for
-	factoriel = 1;
-	for(i = 1; i <= N; i++){
-		factoriel *= i;
-	}
+	printf(N, "! = ", factoriel);
 	
-	printf("%d! = %d\n", N, factoriel);
+FIN
+```
+
+```
+ALGORITHME  Factoriel
+     VARIABLE  N, factoriel, i: Entier
+DEBUT
+	Ecrire("Veuillez saisir N:");
+	Lire(N)
+	
+	// Avec for
+	factoriel <-- 1;
+	Pour i de 1 a N Faire
+		factoriel <-- factoriel * i
+	FinPour
+	
+	printf(N, "! = ", factoriel);
 	
 FIN
 ```
