@@ -1,13 +1,9 @@
 # Pour La Video
-[Video link](https://www.youtube.com/playlist?list=PLF2W_rB6QiYBZl59v_ueRM8kcUKQMPBGS)
+[Video link](https://www.youtube.com/playlist?list=PLF2W_rB6QiYBZl59v_ueRM8kcUKQMPBGS),  [PDF link](https://github.com/DgrinderHZ/MIP/blob/master/Langage%20C/S3/Problem%20Set%201.pdf) 
 
-# Exercice en PDF 
-
-| Enonce | [PDF link](https://github.com/DgrinderHZ/MIP/blob/master/Langage%20C/S3/Problem%20Set%201.pdf)  |   |   |   |   |   |   |   |   |   |  |   |   |   
+| Algorithmes et Code C  | |   |   |   |   |   |   |   |   |   |  |   |   |   
 |--------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Algo   | [Exercice 1](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo1)  |  [Exercice 2](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo2) |  [Exercice 3](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo3) |  [Exercice 4](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo4) | [Exercice 5](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo5) | [Exercice 6](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo6)  |  [Exercice 7](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo7) |  [Exercice 8](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo8) | [Exercice 9](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo9)  |  [Exercice 10](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo10) |  [Exercice 11](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo11) |  [Exercice 12](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo12) |  [Exercice 13](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo13) |
-| C      |  [fichiers.c](https://github.com/Zeek-Zone/MIP-LST-MST/tree/master/Langage%20C/S3/Problem%20Set%201%20-%20Solution) |   |   |   |   |   |   |   |   |  |   |   |   |  
-
+| acces direct  | [Exercice 1](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo1)  |  [Exercice 2](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo2) |  [Exercice 3](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo3) |  [Exercice 4](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo4) | [Exercice 5](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo5) | [Exercice 6](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo6)  |  [Exercice 7](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo7) |  [Exercice 8](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo8) | [Exercice 9](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo9)  |  [Exercice 10](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo10) |  [Exercice 11](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo11) |  [Exercice 12](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo12) |  [Exercice 13](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#exo13) |
 
 
 #### Exo1
@@ -28,7 +24,7 @@ DEBUT
      
 FIN
 ```
-##### C
+##### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -71,7 +67,7 @@ DEBUT
      
 FIN
 ```
-##### C
+##### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -122,7 +118,7 @@ DEBUT
 	Ecrire("Le montant est: ", montant); 
 FIN
 ```
-#### C
+#### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -174,7 +170,7 @@ DEBUT
 	Ecrire("Dans une minute, il sera ", h," heure(s) ", m)
 FIN
 ```
-#### C
+#### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -231,7 +227,7 @@ DEBUT
 	FinSi	
 FIN
 ```
-#### C
+#### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -279,7 +275,7 @@ DEBUT
 		
 FIN
 ```
-#### C
+#### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -331,7 +327,7 @@ DEBUT
 	Ecrire("pgcd(", a, ",", b, ") = ", pgcd)	
 FIN
 ```
-#### C
+#### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -383,7 +379,7 @@ DEBUT
 	printf("La somme est ", somme, " et la moyenne est ", moyenne);
 FIN
 ```
-#### C
+#### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -431,7 +427,7 @@ DEBUT
 	FinSi
 FIN
 ```
-#### C
+#### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -481,7 +477,7 @@ DEBUT
 	Ecrire(a, "x", b, " = ", produit)
 FIN
 ```
-#### C
+#### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -536,7 +532,7 @@ DEBUT
 	
 FIN
 ```
-#### C
+#### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -591,7 +587,7 @@ DEBUT
 	
 FIN
 ```
-#### C
+#### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -640,7 +636,7 @@ DEBUT
 	
 FIN
 ```
-#### C
+#### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -684,7 +680,7 @@ DEBUT
 	
 FIN
 ```
-#### C
+#### Traduction C
 ```c
 #include<stdio.h>
 #include<conio.h>
