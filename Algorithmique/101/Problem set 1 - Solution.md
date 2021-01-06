@@ -28,6 +28,30 @@ DEBUT
      
 FIN
 ```
+##### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+int main(){
+	int a, b, num;
+
+	printf("Veuillez saisir le nombre a puis b: [a, b]\n");
+	scanf("%d%d", &a, &b);
+	printf("Veuillez saisir le nombre n:\n");
+	scanf("%d", &num);
+	
+	if(num <= b && num >= a)
+		printf("%d appartient a [%d, %d].\n", num, a, b);
+	else
+		printf("%d n'appartient pas a [%d, %d].\n", num, a, b);
+	
+	
+	getch();
+	return 0;
+}
+```
 #### Exo2
 ```python
 ALGORITHME  signe de produit
@@ -46,6 +70,28 @@ DEBUT
      FinSi
      
 FIN
+```
+##### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+int main(){
+	int a, b;
+
+	printf("Veuillez saisir le nombre a puis b: ");
+	scanf("%d%d", &a, &b);
+	
+	if((0 <= b && 0 <= a) || (0 >= b && 0 >= a))
+		printf("Le produit est positif.\n");
+	else
+		printf("Le produit est negatif.\n");
+	
+	
+	getch();
+	return 0;
+}
 ```
 
 #### Exo3
@@ -76,7 +122,35 @@ DEBUT
 	Ecrire("Le montant est: ", montant); 
 FIN
 ```
+#### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
 
+int main(){
+
+	int heure, salaire;
+	float montant = 0;
+
+	printf("Veuillez saisir le nombre des heures de travail: ");
+	scanf("%d", &heure);
+
+	printf("Veuillez saisir votre salaire: ");
+	scanf("%d", &salaire);
+
+	if(heure <= 39) montant += 0;
+	else if(heure <= 44) montant += (heure-40+1)*0.5*salaire;
+	else if(heure <= 49) montant += 5*0.5*salaire + (heure-45+1)*0.75*salaire;
+	else if(heure <= 50) montant += 5*0.5*salaire + 5*0.75*salaire + (heure-50+1)*salaire;
+	
+	printf("Le montant est: %f\n", montant);
+	
+	getch();
+	return 0;
+}
+
+```
 
 #### Exo4
 ```python
@@ -100,7 +174,33 @@ DEBUT
 	Ecrire("Dans une minute, il sera ", h," heure(s) ", m)
 FIN
 ```
+#### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
 
+int main(){
+	int h, m;
+
+	printf("Veuillez saisir l\'heure:\n");
+	scanf("%d", &h);
+	printf("Veuillez saisir la minute:\n");
+	scanf("%d", &m);
+
+	m++;
+	if(m >= 60){
+		m = m - 60;
+		h++;
+		if(h >= 24) h = h - 24;
+	}
+
+	printf("Dans une minute, il sera %d heure(s) %d.\n", h, m);
+	
+	getch();
+	return 0;
+}
+```
 #### Exo5
 ```python
 ALGORITHME  quelle mention?
@@ -131,6 +231,37 @@ DEBUT
 	FinSi	
 FIN
 ```
+#### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+int main(){
+	int note;
+
+	printf("Veuillez saisir VOTRE NOTE:\n");
+	scanf("%d", &note);
+	
+	if(note < 7)
+		printf("Non valide\n");
+	else if(note < 10)
+		printf("Rattrapage\n");
+	else if(note < 12)
+		printf("Passable\n");
+	else if(note < 14)
+		printf("Assez bien\n");
+	else if(note < 16)
+		printf("Bien\n");
+	else if(note < 18)
+		printf("Tres bien\n");
+	else 
+		printf("Excellent\n");
+	
+	getch();
+	return 0;
+}
+```
 #### Exo6
 ```python
 ALGORITHME  dix nomvre suivants!
@@ -147,6 +278,30 @@ DEBUT
 	FinPour
 		
 FIN
+```
+#### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+int main(){
+	int depart, fin;
+
+	printf("Veuillez saisir le nombre de depart: ");
+	scanf("%d", &depart);
+
+	fin = depart + 10;
+	depart++;
+
+	int i; 
+	for(i = depart; i <= fin ; i++) 
+		printf("%d\t", i);
+	
+	
+	getch();
+	return 0;
+}
 ```
 #### Exo7
 ```python
@@ -176,6 +331,39 @@ DEBUT
 	Ecrire("pgcd(", a, ",", b, ") = ", pgcd)	
 FIN
 ```
+#### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+int main(){
+	int a, b, pgcd;
+
+	printf("Veuillez saisir le nombre a:\n");
+	scanf("%d", &a);
+	printf("Veuillez saisir le nombre b:\n");
+	scanf("%d", &b);
+	
+	printf("pgcd(%d, %d) = ", a, b);
+
+	if(a == 0 && b != 0) pgcd = b;
+	else if(b == 0 && a != 0) pgcd = a;
+	else{
+
+		while(a != b){
+			if(a > b) a = a - b;
+			else if (b > a) b = b - a;
+		}
+		pgcd = a;
+	}
+
+	printf("%d.\n", pgcd);
+	
+	getch();
+	return 0;
+}
+```
 #### Exo8
 ```python
 ALGORITHME  somme et moyenne
@@ -194,6 +382,33 @@ DEBUT
 	moyenne <-- somme/n;
 	printf("La somme est ", somme, " et la moyenne est ", moyenne);
 FIN
+```
+#### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+int main(){
+	int N, a, somme;
+	float moyenne;
+	printf("Veuillez saisir N:\n");
+	scanf("%d", &N);
+	
+	somme = 0;
+	int i;
+	for(i = 0; i < N; i++){
+		printf("Saisir le nombre %d:\n", i+1);
+		scanf("%d", &a);
+		somme += a;
+	}
+	
+	moyenne = (float)somme/N;
+	printf("La somme est %d et la moyenne est %f.\n", somme, moyenne);
+	
+	getch();
+	return 0;
+}
 ```
 #### Exo9
 ```python
@@ -216,7 +431,34 @@ DEBUT
 	FinSi
 FIN
 ```
+#### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
 
+int main(){
+	int N, somme;
+
+	printf("Veuillez saisir N:\n");
+	scanf("%d", &N);
+	
+	somme = 1;
+	int i;
+	for(i = 2; i < N; i++){
+		if(N % i == 0)
+			somme += i;
+	}
+
+	if(somme == N)
+		printf("%d est un nombre parfait.\n", N);
+	else
+		printf("%d n'est pas un nombre parfait.\n", N);
+	
+	getch();
+	return 0;
+}
+```
 #### Exo10	
 ```python
 ALGORITHME  produit avec sommation
@@ -239,7 +481,37 @@ DEBUT
 	Ecrire(a, "x", b, " = ", produit)
 FIN
 ```
+#### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
 
+int main(){
+	int a, b, produit;
+
+	printf("Veuillez saisir a puis b:\n");
+	scanf("%d%d", &a, &b);
+	
+	produit = 0;
+	int i;
+	if(a < b){
+		for (i = 0; i < a; ++i)
+		{
+			produit += b;
+		}
+	}else{
+		for (i = 0; i < b; ++i)
+		{
+			produit += a;
+		}
+	}
+
+	printf("%dx%d = %d\n", a, b, produit);
+	getch();
+	return 0;
+}
+```
 #### Exo11
 ```python
 ALGORITHME  nomre premier
@@ -264,7 +536,34 @@ DEBUT
 	
 FIN
 ```
+#### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
 
+int main(){
+	int N, premier = 1;
+
+	printf("Veuillez saisir le nombre N:\n");
+	scanf("%d", &N);
+	
+	int i; 
+	for(i = 2; i < N; i++)
+		if(N % i == 0){
+			premier = 0;
+			break;
+		}
+
+	if(premier)
+		printf("%d est un nombre premier.\n", N);
+	else
+		printf("%d n\'est un nombre premier.\n", N);
+	
+	getch();
+	return 0;
+}
+```
 #### Exo12
 ```python
 ALGORITHME  la moysns des notes
@@ -292,7 +591,35 @@ DEBUT
 	
 FIN
 ```
+#### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
 
+int main(){
+	float note, moyenne, somme;
+	int n;
+	
+	n = 0;
+	somme = 0;
+	while(1){
+		printf("Note %d: ", n+1);
+		scanf("%f", &note);
+		if(note >= 0){
+			somme += note; 
+			n++;
+		}else 
+			break;
+	}
+	
+	moyenne = somme/n;
+	printf("La moyenne de ces %d notes est: %f.\n", n, moyenne);
+	
+	getch();
+	return 0;
+}
+```
 #### Exo13
 ```python
 ALGORITHME  factoriel
@@ -313,6 +640,32 @@ DEBUT
 	
 FIN
 ```
+#### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+int main(){
+	int N, factoriel;
+
+	printf("Veuillez saisir le nombre N:\n");
+	scanf("%d", &N);
+	
+	// Avec While
+	factoriel = 1;
+	int i = 1; 
+	while(i <= N){
+		factoriel *= i;
+		i++;
+	}
+
+	printf("%d! = %d\n", N, factoriel);
+	
+	getch();
+	return 0;
+}
+```
 
 ```python
 ALGORITHME  factoriel
@@ -331,6 +684,29 @@ DEBUT
 	
 FIN
 ```
+#### C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+int main(){
+	int N, factoriel;
+
+	printf("Veuillez saisir le nombre N:\n");
+	scanf("%d", &N);
+
+	// Avec for
+	factoriel = 1;
+	for(i = 1; i <= N; i++){
+		factoriel *= i;
+	}
 	
+	printf("%d! = %d\n", N, factoriel);
+	
+	getch();
+	return 0;
+}
+```
 	
 	
