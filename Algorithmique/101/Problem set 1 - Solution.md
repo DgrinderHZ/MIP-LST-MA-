@@ -7,6 +7,8 @@
 
 
 #### Exo1
+Ecrire un programme qui permet de saisir un nombre puis déterminer s’il appartient à un intervalle
+donné, sachant que les extrémités de l’intervalle sont fixées par l’utilisateur.
 ```python
 ALGORITHME  intervalle
      VARIABLES num, a, b : Entier
@@ -49,6 +51,8 @@ int main(){
 }
 ```
 #### Exo2
+Ecrire un programme qui demande deux nombres à l’utilisateur et l’informe ensuite si leur produit est
+négatif ou positif. Attention toutefois :on ne doit pas calculer le produit des deux nombres.
 ```python
 ALGORITHME  signe de produit
      VARIABLES a, b : Entier
@@ -91,6 +95,12 @@ int main(){
 ```
 
 #### Exo3
+Ecrire un programme qui permet de calculer le montant des heures supplémentaires d’un employé,
+sachant le prix unitaire d’une heure selon le barème suivant :
+Les39 premières heures sans supplément,
+- De la 40ième à la 44ième heure sont majorées de 50%,
+- De la 45ième à la 49ième heure sont majorées de 75%,
+- De la 50ième heure ou plus, sont majorées de 100%.
 ```python
 ALGORITHME  montant
      VARIABLES heure, salaire: Entier
@@ -119,6 +129,7 @@ DEBUT
 FIN
 ```
 #### Traduction C
+
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -149,6 +160,10 @@ int main(){
 ```
 
 #### Exo4
+Ecrivez un programme qui lira au clavier l’heure et les minutes, et il affichera l’heure qu’il sera une
+minute plus tard. Par exemple, si l'utilisateur tape 21 puis 32, l'algorithme doit répondre : "Dans une
+minute, il sera 21 heure(s) 33". NB : on suppose que l'utilisateur entre une heure valide. Pas besoin donc
+de la vérifier.
 ```python
 ALGORITHME  quelle heure dans une minute?
      VARIABLES h, m: Entier
@@ -198,6 +213,7 @@ int main(){
 }
 ```
 #### Exo5
+Écrire un programme qui à partir d’une note affiche la mention correspondant ?
 ```python
 ALGORITHME  quelle mention?
      VARIABLES note: Entier
@@ -259,6 +275,8 @@ int main(){
 }
 ```
 #### Exo6
+Ecrire un programme qui demande un nombre de départ, et qui ensuite affiche les dix nombres suivants.
+Par exemple, si l'utilisateur entre le nombre 17, le programme affichera les nombres de 18 à 27.
 ```python
 ALGORITHME  dix nomvre suivants!
      VARIABLES depart, fin, i: Entier
@@ -300,6 +318,12 @@ int main(){
 }
 ```
 #### Exo7
+Le pgcd de deux nombres par soustractions successives.
+- pgcd (a, b)= pgcd (a− b, a) si a> b
+- pgcd (a, b)= pgcd (a, b − a) si b >a
+- pgcd (a, b)= a si a = b
+On suppose que les opérandes sont des entiers positifs, écrire un programme qui permet de calculer le
+PGCD de deux nombres a et b.
 ```python
 ALGORITHME  pgcd
      VARIABLES a, b, pgcd: Entier
@@ -361,6 +385,7 @@ int main(){
 }
 ```
 #### Exo8
+Écrire un programme qui saisit N entiers et affiche leur somme et leur moyenne ?
 ```python
 ALGORITHME  somme et moyenne
      VARIABLES  n, a, somme, i: Entier
@@ -407,6 +432,8 @@ int main(){
 }
 ```
 #### Exo9
+Ecrire un programme qui détermine si un entier N est parfait ou non. Un entier est dit parfait s'il est égal
+à la somme de ses diviseurs. Exemple 6 = 3 + 2 +1
 ```python
 ALGORITHME  nomre parfait
      VARIABLES  n, somme, i: Entier
@@ -455,7 +482,9 @@ int main(){
 	return 0;
 }
 ```
-#### Exo10	
+#### Exo10
+Ecrire un programme qui permet de calculer le produit de deux entiers en utilisant des additions
+successives.
 ```python
 ALGORITHME  produit avec sommation
      VARIABLES  a, b, produit, i: Entier
@@ -509,6 +538,8 @@ int main(){
 }
 ```
 #### Exo11
+Ecrire un programme qui permet de saisir un entier N et d'afficher s'il est premier ou non. Un nombre
+est dit premier s'il est divisible uniquement par 1 et par lui-même.
 ```python
 ALGORITHME  nomre premier
      VARIABLES  n, i: Entier
@@ -561,6 +592,17 @@ int main(){
 }
 ```
 #### Exo12
+Calculer la moyenne de notes fournies au clavier avec un dialogue de ce type : 
+ > note 1 : 12 </br>
+  note 2 : 15.25 </br>
+  note 3 : 13.5 </br>
+  note 4 : 8.75 </br>
+  note 5 : -1 </br>
+  moyenne de ces 4 notes : 12.37 </br>
+ 
+Le nombre de notes n’est pas connu a priori et l’utilisateur peut en fournir autant qu’il le désire. Pour
+signaler qu’il a terminé, on convient qu’il fournira une note fictive négative. Celle-ci ne devra
+naturellement pas être prise en compte dans le calcul de la moyenne.
 ```python
 ALGORITHME  la moysns des notes
      VARIABLES  n, i: Entier
@@ -617,6 +659,9 @@ int main(){
 }
 ```
 #### Exo13
+Ecrire un programme permettant de lire un nombre entier N puis calcule son factoriel.
+- Utilisez tant que,
+- Utilisez pour.
 ```python
 ALGORITHME  factoriel
      VARIABLES  n, factoriel, i: Entier
