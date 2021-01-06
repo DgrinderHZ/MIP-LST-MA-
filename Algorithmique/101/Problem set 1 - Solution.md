@@ -13,7 +13,7 @@
 #### Exo1
 ```python
 ALGORITHME  intervalle
-     VARIABLE num, a, b : Entier
+     VARIABLES num, a, b : Entier
 DEBUT
      Ecrire("Donner votre intervalle: [a,b] tq, a < b ")
      Lire(a, b)
@@ -31,7 +31,7 @@ FIN
 #### Exo2
 ```python
 ALGORITHME  signe de produit
-     VARIABLE a, b : Entier
+     VARIABLES a, b : Entier
 DEBUT
      Ecrire("Donner deux nombre: ")
      Lire(a, b)
@@ -51,7 +51,7 @@ FIN
 #### Exo3
 ```python
 ALGORITHME  montant
-     VARIABLE heure, salaire: Entier
+     VARIABLES heure, salaire: Entier
 	         montant = 0:  Reel
 DEBUT
         Ecrire("Veuillez saisir le nombre des heures de travail: ")
@@ -81,7 +81,7 @@ FIN
 #### Exo4
 ```python
 ALGORITHME  quelle heure dans une minute?
-     VARIABLE h, m: Entier
+     VARIABLES h, m: Entier
 DEBUT
 	Ecrire("Veuillez saisir l\'heure:")
 	Lire(h)
@@ -104,7 +104,7 @@ FIN
 #### Exo5
 ```python
 ALGORITHME  quelle mention?
-     VARIABLE note: Entier
+     VARIABLES note: Entier
 DEBUT
 	Ecrire("Veuillez saisir VOTRE NOTE:");
 	Lire(note);
@@ -134,7 +134,7 @@ FIN
 #### Exo6
 ```python
 ALGORITHME  dix nomvre suivants!
-     VARIABLE depart, fin, i: Entier
+     VARIABLES depart, fin, i: Entier
 DEBUT
 	Ecrire("Veuillez saisir le nombre de depart: ");
 	Lire(depart);
@@ -151,7 +151,7 @@ FIN
 #### Exo7
 ```python
 ALGORITHME  pgcd
-     VARIABLE a, b, pgcd: Entier
+     VARIABLES a, b, pgcd: Entier
 DEBUT
 	Ecrire("Veuillez saisir le nombre a:")
 	Lire(a)
@@ -179,7 +179,7 @@ FIN
 #### Exo8
 ```python
 ALGORITHME  somme et moyenne
-     VARIABLE  n, a, somme, i: Entier
+     VARIABLES  n, a, somme, i: Entier
 	         moyenne = 0:  Reel
 DEBUT
 	Ecrire("Veuillez saisir n:");
@@ -198,7 +198,7 @@ FIN
 #### Exo9
 ```python
 ALGORITHME  nomre parfait
-     VARIABLE  n, somme, i: Entier
+     VARIABLES  n, somme, i: Entier
 DEBUT
 	Ecrire("Veuillez saisir n:");
 	Lire(n)
@@ -220,7 +220,7 @@ FIN
 #### Exo10	
 ```python
 ALGORITHME  produit avec sommation
-     VARIABLE  a, b, produit, i: Entier
+     VARIABLES  a, b, produit, i: Entier
 DEBUT
 	Ecrire("Veuillez saisir a puis b:");
 	Lire(a, b)
@@ -243,7 +243,7 @@ FIN
 #### Exo11
 ```python
 ALGORITHME  nomre premier
-     VARIABLE  n, i: Entier
+     VARIABLES  n, i: Entier
      	       premier = vrai: Booleen
 DEBUT
 	Ecrire("Veuillez saisir n:")
@@ -268,7 +268,7 @@ FIN
 #### Exo12
 ```python
 ALGORITHME  la moysns des notes
-     VARIABLE  n, i: Entier
+     VARIABLES  n, i: Entier
      	       note, moyenne, somme: Reel
 DEBUT
 	Ecrire("Veuillez saisir n:");
@@ -296,7 +296,7 @@ FIN
 #### Exo13
 ```python
 ALGORITHME  factoriel
-     VARIABLE  n, factoriel, i: Entier
+     VARIABLES  n, factoriel, i: Entier
 DEBUT
 	Ecrire("Veuillez saisir n:");
 	Lire(n)
@@ -316,7 +316,7 @@ FIN
 
 ```python
 ALGORITHME  factoriel
-     VARIABLE  n, factoriel, i: Entier
+     VARIABLES  n, factoriel, i: Entier
 DEBUT
 	Ecrire("Veuillez saisir n:");
 	Lire(n)
