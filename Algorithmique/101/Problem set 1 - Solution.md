@@ -1,4 +1,4 @@
-# Pour La Video
+# Video
 [Video link](https://www.youtube.com/playlist?list=PLF2W_rB6QiYBZl59v_ueRM8kcUKQMPBGS),  [PDF link](https://github.com/DgrinderHZ/MIP/blob/master/Langage%20C/S3/Problem%20Set%201.pdf) 
 
 | Algorithmes et Code C  | |   |   |   |   |   |   |   |   |   |  |   |   |   
@@ -26,6 +26,7 @@ DEBUT
      
 FIN
 ```
+
 ##### Traduction C
 ```c
 #include<stdio.h>
@@ -50,6 +51,7 @@ int main(){
 	return 0;
 }
 ```
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
 #### Exo2
 Ecrire un programme qui demande deux nombres à l’utilisateur et l’informe ensuite si leur produit est
 négatif ou positif. Attention toutefois :on ne doit pas calculer le produit des deux nombres.
@@ -93,7 +95,7 @@ int main(){
 	return 0;
 }
 ```
-
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
 #### Exo3
 Ecrire un programme qui permet de calculer le montant des heures supplémentaires d’un employé,
 sachant le prix unitaire d’une heure selon le barème suivant :
@@ -158,7 +160,7 @@ int main(){
 }
 
 ```
-
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
 #### Exo4
 Ecrivez un programme qui lira au clavier l’heure et les minutes, et il affichera l’heure qu’il sera une
 minute plus tard. Par exemple, si l'utilisateur tape 21 puis 32, l'algorithme doit répondre : "Dans une
@@ -185,6 +187,7 @@ DEBUT
 	Ecrire("Dans une minute, il sera ", h," heure(s) ", m)
 FIN
 ```
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
 #### Traduction C
 ```c
 #include<stdio.h>
@@ -212,6 +215,7 @@ int main(){
 	return 0;
 }
 ```
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
 #### Exo5
 Écrire un programme qui à partir d’une note affiche la mention correspondant ?
 ```python
@@ -243,6 +247,7 @@ DEBUT
 	FinSi	
 FIN
 ```
+
 #### Traduction C
 ```c
 #include<stdio.h>
@@ -274,6 +279,7 @@ int main(){
 	return 0;
 }
 ```
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
 #### Exo6
 Ecrire un programme qui demande un nombre de départ, et qui ensuite affiche les dix nombres suivants.
 Par exemple, si l'utilisateur entre le nombre 17, le programme affichera les nombres de 18 à 27.
@@ -317,6 +323,7 @@ int main(){
 	return 0;
 }
 ```
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
 #### Exo7
 Le pgcd de deux nombres par soustractions successives.
 - pgcd (a, b)= pgcd (a− b, a) si a> b
@@ -384,6 +391,7 @@ int main(){
 	return 0;
 }
 ```
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
 #### Exo8
 Écrire un programme qui saisit N entiers et affiche leur somme et leur moyenne ?
 ```python
@@ -431,6 +439,7 @@ int main(){
 	return 0;
 }
 ```
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
 #### Exo9
 Ecrire un programme qui détermine si un entier N est parfait ou non. Un entier est dit parfait s'il est égal
 à la somme de ses diviseurs. Exemple 6 = 3 + 2 +1
@@ -482,6 +491,7 @@ int main(){
 	return 0;
 }
 ```
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
 #### Exo10
 Ecrire un programme qui permet de calculer le produit de deux entiers en utilisant des additions
 successives.
@@ -537,6 +547,7 @@ int main(){
 	return 0;
 }
 ```
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
 #### Exo11
 Ecrire un programme qui permet de saisir un entier N et d'afficher s'il est premier ou non. Un nombre
 est dit premier s'il est divisible uniquement par 1 et par lui-même.
@@ -591,6 +602,7 @@ int main(){
 	return 0;
 }
 ```
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
 #### Exo12
 Calculer la moyenne de notes fournies au clavier avec un dialogue de ce type : 
  > note 1 : 12 </br>
@@ -658,6 +670,7 @@ int main(){
 	return 0;
 }
 ```
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
 #### Exo13
 Ecrire un programme permettant de lire un nombre entier N puis calcule son factoriel.
 - Utilisez tant que,
@@ -749,5 +762,4 @@ int main(){
 	return 0;
 }
 ```
-	
-	
+[Top ^](https://github.com/Zeek-Zone/MIP-LST-MST/blob/master/Algorithmique/101/Problem%20set%201%20-%20Solution.md#Video)
