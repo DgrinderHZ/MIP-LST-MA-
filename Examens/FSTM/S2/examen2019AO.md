@@ -20,7 +20,7 @@ int IndCell(int y, int x){
 ```
 ##### 3)
 ```c
-// on decompose en 2 fonctions
+// on decompose en 2 fonctions 😎
 int compterOccurrences(int tab[], int y, int n){
     int cpt = 0, i;
     for(i = 0; i < 9; i++){
@@ -175,7 +175,7 @@ int DoublonCarreBis(int tab[], int y, int x){
 ```
 ##### 6)
 ```c
-// On definit des fonctions structures auxiliaires
+// On definit des fonctions structures auxiliaires  😎
 
 struct ind{
     int y;
@@ -236,7 +236,7 @@ return res;
 
 /// Essayer de decomposer cette fonction 
 /// en plusieur fonctions pour simplifier 
-/// pour la lisibilité de code (t9dro tkhrjo mnha 2 fonctions auxiliaires khrin)
+/// pour la lisibilité de code (😎t9dro tkhrjo mnha 2 fonctions auxiliaires khrin)
 void Candidat(int tab[], int y, int x){
     /// determiner  quel carre
     Indice cord = quelCarre(y, x);
@@ -246,7 +246,7 @@ void Candidat(int tab[], int y, int x){
     if(tab[k] != 0) /// non vide
         printf("La case est deja pleine: %d", tab[k]);
     else{ 
-         // Remarque: Hnaya t9edro tkhrjo deux fonctions
+         // Remarque 😎: Hnaya t9edro tkhrjo deux fonctions
         /// chercher les valeurs possible pour la ligne
         int possible[9], taille = 0, i;
         /// pour chaque valeur 1, 2,...,9
@@ -283,4 +283,101 @@ void Candidat(int tab[], int y, int x){
     }
 }
 ```
+#### Exercice 3 *Suite de Conway*
+##### 1)
+![image](conway10.png)
 
+##### 2)
+```c
+#define MAX_CHIFFRE 100
+struct terme{
+    int taille;
+    int rep[MAX_CHIFFRE];
+};
+
+typedef struct terme Terme;
+```
+
+##### 3)
+```c
+// On decompose le probleme  😎
+int comptperOccConsicutive(Terme *in, int i){
+    int cpt = 0;
+    int j = i;
+    while(in->rep[i] == in->rep[j]){
+        cpt++;
+        j++;
+    }
+return cpt;
+}
+
+Terme* compute(Terme *in){
+    Terme *out = (Terme*)malloc(sizeof(Terme));
+    int i, j = 0, occ;
+    for(i = 0; i < in->taille; i = i + occ){
+        occ = comptperOccConsicutive(in, i);
+        out->rep[j] = occ;
+        j++;
+        out->rep[j] = in->rep[i];
+        j++;
+    }
+    out->taille = j;
+    return out;
+}
+
+
+```
+
+##### 4)
+```c
+
+void print(int n){
+    printf("Voici les n premiers termes de la suite de Conway.\n");
+    printf("Terme 0: 1\n");
+
+    Terme x0, *precedent, *suivant;
+    x0.taille = 1;
+    x0.rep[0] = 1;
+    precedent = &x0;
+    
+    int i;
+    for(i = 1; i <= n; i++){
+        suivant = compute(precedent);
+        printf("Terme %d: ", i);
+        int j;
+        for(j = 0; j < suivant->taille; j++)
+            printf("%d", suivant->rep[j]);
+        printf("\n");
+        precedent = suivant;
+    }
+    
+}
+
+// Partie 2 de la question
+#include <stdio.h>
+#include <stdlib.h>
+void print(int n);
+int main()
+{
+    print(12);
+    return 0;
+}
+
+```
+##### 5)
+```c
+Terme* reverse(Terme *in){
+    Terme *out = (Terme*)malloc(sizeof(Terme));
+    int i, j = 0, occ, k=0;
+    for(i = 0; i < in->taille; i++){
+        occ = in->rep[i];
+        i++;
+        for(j = 0; j < occ; j++){
+            out->rep[k] = in->rep[i];
+            k++;
+        }
+    }
+    out->taille = k;
+return out;
+}
+```
