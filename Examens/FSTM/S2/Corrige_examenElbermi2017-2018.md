@@ -1,4 +1,4 @@
-![image](exams1.png]
+![image](exams1.png)
 
 12eme séance  Examen 2017/2018 Farhaoui et Elbermi  (2021-02-18 at 13:02 GMT-8)
 ici  [enregistrements](https://drive.google.com/drive/u/1/folders/1z0yDKqcQeFtvZ0eIDWyiyDlmmMd84Fl_)
