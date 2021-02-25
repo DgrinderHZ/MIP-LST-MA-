@@ -1,5 +1,18 @@
+#### Exercice 1 
+	Dans le  cours ou dans  l'Avant Dernier enregistrement (9ieme seance)
+#### Exercice 2
+
+##### 1. 
+La valeur de A vaut : 16
+La valeur de B vaut : 8.5
+
+##### 2. 
+16 = 10000   et 8.5 = 1000.1
+##### 3. 
+Dernier enregistrement (10ieme seance)
 
 
+#### Exercice 2
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -59,10 +72,6 @@ Debut
 	
 	Ecrire("Le prix a payer est: ", montant)
 Fin
-	
-
-
-
 */
 
 
