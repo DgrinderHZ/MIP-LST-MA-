@@ -73,22 +73,4 @@ Debut
 	Ecrire("Le prix a payer est: ", montant)
 Fin
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```
