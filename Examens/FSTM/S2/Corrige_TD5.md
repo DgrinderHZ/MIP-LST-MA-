@@ -256,7 +256,7 @@ Debut
 	FinPour
 	
 	// Compter
-	Pour j de 0 a TAILE_CHAINE par=1 Faire
+	Pour j de 0 a TAILLE_CHAINE-1 par=1 Faire
 		Si( (ch[j] <= 'z')  ET (ch[j] >= 'a') )
 			i <-- ch[j] -'a'
 			abc[i] <-- abc[i] + 1
@@ -276,7 +276,7 @@ Fin
 ```c
 
 #include<stdio.h>
-
+#include <string.h>
 int main(){ 
 	int abc[26], i, j;
 	char ch[40];
@@ -315,8 +315,8 @@ Algorithme TriParSelection
 	Ecrire("tapez le nombre d’elements \n")
 	Lire(N)
 	 
-	Ecrire("tapez le nombre d’elements \n")
-	Pour i de 0 a N par=1 Faire
+
+	Pour i de 0 a N-1 par=1 Faire
 		Ecrire("Saisir un entier")
 		Lire(tab[i])
 	FinPour
@@ -326,7 +326,7 @@ Algorithme TriParSelection
 	Pour i de 0 a N-1 par=1 Faire 
 		pos <-- i  
 		// Chercher la position de plus petit element
-		Pour j de i a N par=1 Faire  
+		Pour j de i a N-1 par=1 Faire  
 			Si (tab[j]< tab[pos]) Alors 
 			 	pos <-- j // memoriser la position de plus petit 
 			FinSi
@@ -339,7 +339,7 @@ Algorithme TriParSelection
 	FinPour
 	
 	// affichage du tableau après le traitement 
-	Pour i de 0 a N par=1 Faire 
+	Pour i de 0 a N-1 par=1 Faire 
 		Ecrire(tab[i])
 	FinPour
 Fin
