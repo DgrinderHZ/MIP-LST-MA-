@@ -247,35 +247,35 @@ Algorithme NombreOccurrences
 			tableau ch[40]: Caractere
 Debut
 
-	Ecrire("donner votre chaine\n");
-	Lire(ch);
+	Ecrire("donner votre chaine\n")
+	Lire(ch)
 	
 	// Initialisation des compteur a zero
 	Pour i de 0 a 25 par=1 Faire
-		abc[i] <-- 0;
+		abc[i] <-- 0
 	FinPour
 	
 	// Compter
 	Pour j de 0 a TAILE_CHAINE par=1 Faire
-		Si( (ch[j]<='z')  ET (ch[j]>='a') )
-			i <-- ch[j] -'a';
-			abc[i] <-- abc[i] + 1;
+		Si( (ch[j] <= 'z')  ET (ch[j] >= 'a') )
+			i <-- ch[j] -'a'
+			abc[i] <-- abc[i] + 1
 		FinSi
 	FinPour
 	
 	// Afficher le resultat
-	Ecrire("La chaine ", ch, " contient: ");
+	Ecrire("La chaine ", ch, " contient: ")
 	Pour i de 0 a 25 par=1 Faire
 		Si(abc[i] <> 0)
-	    	Ecrire('a'+ i, " ----> ",  abc[i], " fois \n");
-	    FinSi
+	    		Ecrire('a'+ i, " ----> ",  abc[i], " fois \n")
+	    	FinSi
 	FinPour
 Fin
 ```
+
 ```c
 
 #include<stdio.h>
-#include<string.h>
 
 int main(){ 
 	int abc[26], i, j;
@@ -302,5 +302,81 @@ int main(){
 		if(abc[i] != 0)
 	    	printf(" '%c' ----> %d fois\n",'a'+ i, abc[i]);
 	return 0;
+}
+```
+#### Exercice 5
+```python
+
+Algorithme TriParSelection
+	Variables	tableau tab [100]: Entier 
+		        i, j, N, pos, tmp : Entier 
+	
+	// la saisie des données
+	Ecrire("tapez le nombre d’elements \n")
+	Lire(N)
+	 
+	Ecrire("tapez le nombre d’elements \n")
+	Pour i de 0 a N par=1 Faire
+		Ecrire("Saisir un entier")
+		Lire(tab[i])
+	FinPour
+	
+	// Traitement 
+	// parcourir le tableau
+	Pour i de 0 a N-1 par=1 Faire 
+		pos <-- i  
+		// Chercher la position de plus petit element
+		Pour j de i a N par=1 Faire  
+			Si (tab[j]< tab[pos]) Alors 
+			 	pos <-- j // memoriser la position de plus petit 
+			FinSi
+		FinPour
+		
+		// Echanger
+		tmp <-- tab[i] 
+		tab[i] <-- tab[pos]
+		tab[pos] <-- tmp 
+	FinPour
+	
+	// affichage du tableau après le traitement 
+	Pour i de 0 a N par=1 Faire 
+		Ecrire(tab[i])
+	FinPour
+Fin
+```
+```c
+#include <stdio.h> 
+int main(){ 
+	int tab [100]; 
+	int i, j, N, pos, tmp ; 
+	
+	/* ****************************** la saisie des données*************************** */ 
+	printf ("tapez le nombre d’elements \n"); 
+	scanf("%d", &N); 
+	
+	printf ("tapez le nombre d’elements \n"); 
+	for ( i = 0; i < N; i++){ 
+		printf ("tab[%d]= ", i); 
+		scanf("%d", &tab[i]); 
+	} 
+	
+	/* ************************************ Traitement ********************************* */ 
+	for ( i = 0; i < N-1; i++) { // parcourir le tableau
+		pos=i ; 
+		// Chercher la position de plus petit element
+		for ( j = i; j < N; j++){ 
+			if(tab[j]< tab[pos]) 
+			 	pos = j; // memoriser la position de plus petit 
+		} 
+		// Echanger
+		tmp=tab[i] ; 
+		tab[i]=tab[pos]; 
+		tab[pos]=tmp; 
+	
+	} 
+	/* **************** affichage du tableau après le traitement ************** */ 
+	for ( i = 0; i< N;i = i + 1) 
+		printf ("%d ", tab[i]); 
+	return 0; 
 }
 ```
