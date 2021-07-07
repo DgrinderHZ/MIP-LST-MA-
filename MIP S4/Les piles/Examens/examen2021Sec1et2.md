@@ -1,3 +1,6 @@
+![image](amouch.png)
+
+▶🎦💚[Video YouTube](https://www.youtube.com/c/ZeekZoneHZ/videos)
 ## La fonction main
 ```c
 #include <stdio.h>
